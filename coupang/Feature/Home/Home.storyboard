@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -34,20 +35,88 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGN-Jr-5LU">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGN-Jr-5LU">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="184"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="dGN-Jr-5LU" secondAttribute="trailing" id="74v-CW-vBP"/>
-                                                <constraint firstItem="dGN-Jr-5LU" firstAttribute="leading" secondItem="xoe-16-xqk" secondAttribute="leading" id="KzE-Mh-BBD"/>
-                                                <constraint firstAttribute="bottom" secondItem="dGN-Jr-5LU" secondAttribute="bottom" id="p3a-Gu-GZa"/>
-                                                <constraint firstItem="dGN-Jr-5LU" firstAttribute="top" secondItem="xoe-16-xqk" secondAttribute="top" id="zfn-3r-YQY"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="393" height="184"/>
                                         <connections>
                                             <outlet property="imageView" destination="dGN-Jr-5LU" id="BXI-TD-Xkq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeProductCollectionViewCell" id="3DL-sY-bW2" customClass="HomeProductCollectionViewCell" customModule="coupang" customModuleProvider="target">
+                                        <rect key="frame" x="141.66666666666666" y="194" width="110" height="201.33333333333337"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xx7-ko-poT">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="201.33333333333337"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SCx-Ss-Jio">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="201.33333333333334"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u2x-dA-HdW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="u2x-dA-HdW" secondAttribute="height" multiplier="1:1" id="Jcm-l1-igV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-iK-6Du">
+                                                            <rect key="frame" x="0.0" y="122" width="110" height="79.333333333333314"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxo-3B-4o3">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" name="bk"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zOw-ja-Pec">
+                                                                    <rect key="frame" x="0.0" y="30.000000000000004" width="110" height="49.333333333333343"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nay-ZN-mXY">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="12"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                            <color key="textColor" name="key-color-red-2"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5PU-kB-yuB">
+                                                                            <rect key="frame" x="0.0" y="17.000000000000004" width="110" height="32.333333333333343"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Y8-tN-9TQ">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="14.333333333333334"/>
+                                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                                                    <color key="textColor" name="gray-3-cool"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1n-Qe-25q">
+                                                                                    <rect key="frame" x="0.0" y="15.333333333333343" width="110" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                                    <color key="textColor" name="key-color-red"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="SCx-Ss-Jio" secondAttribute="bottom" id="Em1-rA-nOS"/>
+                                                <constraint firstItem="SCx-Ss-Jio" firstAttribute="top" secondItem="xx7-ko-poT" secondAttribute="top" id="HUO-iT-Ghe"/>
+                                                <constraint firstItem="SCx-Ss-Jio" firstAttribute="leading" secondItem="xx7-ko-poT" secondAttribute="leading" id="Mbb-sM-0Ho"/>
+                                                <constraint firstAttribute="trailing" secondItem="SCx-Ss-Jio" secondAttribute="trailing" id="hZt-aj-ZxR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="discountPriceLabel" destination="E1n-Qe-25q" id="OxI-7a-wkj"/>
+                                            <outlet property="originalPriceLabel" destination="4Y8-tN-9TQ" id="T6M-TM-BYH"/>
+                                            <outlet property="productItemImageView" destination="u2x-dA-HdW" id="BMz-cb-0zg"/>
+                                            <outlet property="productReasonDiscountLabel" destination="nay-ZN-mXY" id="T7q-ee-2OZ"/>
+                                            <outlet property="productTitleLabel" destination="Xxo-3B-4o3" id="q9m-fB-tp5"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -72,6 +141,18 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="bk">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-3-cool">
+            <color red="0.70980392156862748" green="0.73333333333333328" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="key-color-red">
+            <color red="0.81568627450980391" green="0.23137254901960785" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="key-color-red-2">
+            <color red="0.88235294117647056" green="0.396078431372549" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

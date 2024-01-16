@@ -22,6 +22,7 @@
 		AB051DC62B564943003C5274 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB051DC52B564943003C5274 /* Home.storyboard */; };
 		AB051DC82B564952003C5274 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DC72B564952003C5274 /* HomeViewController.swift */; };
 		AB051DCE2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DCD2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift */; };
+		AB051DD02B565F14003C5274 /* HomeProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DCF2B565F14003C5274 /* HomeProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AB051DC52B564943003C5274 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AB051DC72B564952003C5274 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB051DCD2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB051DCF2B565F14003C5274 /* HomeProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				AB051DC52B564943003C5274 /* Home.storyboard */,
 				AB051DC72B564952003C5274 /* HomeViewController.swift */,
 				AB051DCD2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift */,
+				AB051DCF2B565F14003C5274 /* HomeProductCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB051DC22B563077003C5274 /* CPColor.swift in Sources */,
+				AB051DD02B565F14003C5274 /* HomeProductCollectionViewCell.swift in Sources */,
 				AB051DA02B5619F8003C5274 /* AppDelegate.swift in Sources */,
 				AB051DC82B564952003C5274 /* HomeViewController.swift in Sources */,
 				AB051DC42B5631B5003C5274 /* CPFont.swift in Sources */,
