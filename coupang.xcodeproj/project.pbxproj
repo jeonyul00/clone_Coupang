@@ -13,6 +13,8 @@
 		AB051DA72B5619F8003C5274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB051DA52B5619F8003C5274 /* Main.storyboard */; };
 		AB051DA92B5619F9003C5274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB051DA82B5619F9003C5274 /* Assets.xcassets */; };
 		AB051DAC2B5619F9003C5274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB051DAA2B5619F9003C5274 /* LaunchScreen.storyboard */; };
+		AB051DB42B561D39003C5274 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB051DB32B561D39003C5274 /* Splash.storyboard */; };
+		AB051DB62B561D71003C5274 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DB52B561D71003C5274 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB051DA82B5619F9003C5274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB051DAB2B5619F9003C5274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB051DAD2B5619F9003C5274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB051DB32B561D39003C5274 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		AB051DB52B561D71003C5274 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AB051DA82B5619F9003C5274 /* Assets.xcassets */,
 				AB051DAA2B5619F9003C5274 /* LaunchScreen.storyboard */,
 				AB051DAD2B5619F9003C5274 /* Info.plist */,
+				AB051DB52B561D71003C5274 /* SplashViewController.swift */,
+				AB051DB32B561D39003C5274 /* Splash.storyboard */,
 			);
 			path = coupang;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				AB051DAC2B5619F9003C5274 /* LaunchScreen.storyboard in Resources */,
 				AB051DA92B5619F9003C5274 /* Assets.xcassets in Resources */,
 				AB051DA72B5619F8003C5274 /* Main.storyboard in Resources */,
+				AB051DB42B561D39003C5274 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				AB051DA42B5619F8003C5274 /* ViewController.swift in Sources */,
 				AB051DA02B5619F8003C5274 /* AppDelegate.swift in Sources */,
 				AB051DA22B5619F8003C5274 /* SceneDelegate.swift in Sources */,
+				AB051DB62B561D71003C5274 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +299,7 @@
 				INFOPLIST_FILE = coupang/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +325,7 @@
 				INFOPLIST_FILE = coupang/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
