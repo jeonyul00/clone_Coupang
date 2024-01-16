@@ -16,6 +16,11 @@
 		AB051DB42B561D39003C5274 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB051DB32B561D39003C5274 /* Splash.storyboard */; };
 		AB051DB62B561D71003C5274 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DB52B561D71003C5274 /* SplashViewController.swift */; };
 		AB051DB92B562518003C5274 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AB051DB82B562518003C5274 /* Lottie */; };
+		AB051DBC2B56292B003C5274 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB051DBB2B56292B003C5274 /* Images.xcassets */; };
+		AB051DBE2B562A59003C5274 /* CPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DBD2B562A59003C5274 /* CPImage.swift */; };
+		AB051DC02B562E6C003C5274 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB051DBF2B562E6C003C5274 /* Colors.xcassets */; };
+		AB051DC22B563077003C5274 /* CPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DC12B563077003C5274 /* CPColor.swift */; };
+		AB051DC42B5631B5003C5274 /* CPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DC32B5631B5003C5274 /* CPFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		AB051DAD2B5619F9003C5274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB051DB32B561D39003C5274 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		AB051DB52B561D71003C5274 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		AB051DBB2B56292B003C5274 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB051DBD2B562A59003C5274 /* CPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPImage.swift; sourceTree = "<group>"; };
+		AB051DBF2B562E6C003C5274 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AB051DC12B563077003C5274 /* CPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPColor.swift; sourceTree = "<group>"; };
+		AB051DC32B5631B5003C5274 /* CPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		AB051D9E2B5619F8003C5274 /* coupang */ = {
 			isa = PBXGroup;
 			children = (
+				AB051DBA2B562902003C5274 /* DesignSource */,
 				AB051D9F2B5619F8003C5274 /* AppDelegate.swift */,
 				AB051DA12B5619F8003C5274 /* SceneDelegate.swift */,
 				AB051DA32B5619F8003C5274 /* ViewController.swift */,
@@ -73,6 +84,18 @@
 				AB051DB32B561D39003C5274 /* Splash.storyboard */,
 			);
 			path = coupang;
+			sourceTree = "<group>";
+		};
+		AB051DBA2B562902003C5274 /* DesignSource */ = {
+			isa = PBXGroup;
+			children = (
+				AB051DBB2B56292B003C5274 /* Images.xcassets */,
+				AB051DBF2B562E6C003C5274 /* Colors.xcassets */,
+				AB051DBD2B562A59003C5274 /* CPImage.swift */,
+				AB051DC12B563077003C5274 /* CPColor.swift */,
+				AB051DC32B5631B5003C5274 /* CPFont.swift */,
+			);
+			path = DesignSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB051DAC2B5619F9003C5274 /* LaunchScreen.storyboard in Resources */,
+				AB051DBC2B56292B003C5274 /* Images.xcassets in Resources */,
 				AB051DA92B5619F9003C5274 /* Assets.xcassets in Resources */,
+				AB051DC02B562E6C003C5274 /* Colors.xcassets in Resources */,
 				AB051DA72B5619F8003C5274 /* Main.storyboard in Resources */,
 				AB051DB42B561D39003C5274 /* Splash.storyboard in Resources */,
 			);
@@ -153,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB051DC22B563077003C5274 /* CPColor.swift in Sources */,
 				AB051DA42B5619F8003C5274 /* ViewController.swift in Sources */,
 				AB051DA02B5619F8003C5274 /* AppDelegate.swift in Sources */,
+				AB051DC42B5631B5003C5274 /* CPFont.swift in Sources */,
+				AB051DBE2B562A59003C5274 /* CPImage.swift in Sources */,
 				AB051DA22B5619F8003C5274 /* SceneDelegate.swift in Sources */,
 				AB051DB62B561D71003C5274 /* SplashViewController.swift in Sources */,
 			);

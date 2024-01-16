@@ -24,10 +24,9 @@ class SplashViewController: UIViewController {
         super.viewDidAppear(animated)
         loadViewIfNeeded()
         UIView.animate(withDuration: 1,delay: 1.5) { [weak self] in
-                    self?.appIcon.alpha = 0
-                }
+            self?.appIcon.alpha = 0
+        }
         lottieAnimationView.play()
     }
-    
     
 }
