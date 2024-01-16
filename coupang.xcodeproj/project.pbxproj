@@ -26,6 +26,7 @@
 		AB9DFC902B567B0A002C6459 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DFC8F2B567B0A002C6459 /* NetworkService.swift */; };
 		AB9DFC932B567C7D002C6459 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DFC922B567C7D002C6459 /* HomeResponse.swift */; };
 		AB9DFC962B56814C002C6459 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AB9DFC952B56814C002C6459 /* Kingfisher */; };
+		AB9DFC982B5684FB002C6459 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DFC972B5684FB002C6459 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AB051DCF2B565F14003C5274 /* HomeProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB9DFC8F2B567B0A002C6459 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AB9DFC922B567C7D002C6459 /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
+		AB9DFC972B5684FB002C6459 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				AB9DFC8D2B567524002C6459 /* View */,
 				AB051DC52B564943003C5274 /* Home.storyboard */,
 				AB051DC72B564952003C5274 /* HomeViewController.swift */,
+				AB9DFC972B5684FB002C6459 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				AB051DC82B564952003C5274 /* HomeViewController.swift in Sources */,
 				AB051DC42B5631B5003C5274 /* CPFont.swift in Sources */,
 				AB051DBE2B562A59003C5274 /* CPImage.swift in Sources */,
+				AB9DFC982B5684FB002C6459 /* HomeViewModel.swift in Sources */,
 				AB051DA22B5619F8003C5274 /* SceneDelegate.swift in Sources */,
 				AB051DB62B561D71003C5274 /* SplashViewController.swift in Sources */,
 				AB051DCE2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift in Sources */,
