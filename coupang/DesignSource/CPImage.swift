@@ -37,6 +37,11 @@ enum CPImage {
     static var category7Small:UIImage = UIImage(named: "category_7_small")!
     static var category8Big:UIImage = UIImage(named: "category_8_big")!
     static var category8Small:UIImage = UIImage(named: "category_8_small")!
+    
+    // silde
+    static var silde1:UIImage = UIImage(named: "unsplash_kcA-c3f_3FE-1")!
+    static var silde2:UIImage = UIImage(named: "unsplash_kcA-c3f_3FE")!
+    static var silde3:UIImage = UIImage(named: "unsplash_OyGTkXhuKZE")!
 }
 
 

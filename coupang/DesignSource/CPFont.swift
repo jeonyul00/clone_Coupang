@@ -10,7 +10,6 @@ import UIKit
 
 enum CPFont {
     static var r10:UIFont = UIFont.systemFont(ofSize: 10,weight: .regular)
-    
     static var r12:UIFont = UIFont.systemFont(ofSize: 12,weight: .regular)
     static var m12:UIFont = UIFont.systemFont(ofSize: 12,weight: .medium)
     static var b12:UIFont = UIFont.systemFont(ofSize: 12,weight: .bold)

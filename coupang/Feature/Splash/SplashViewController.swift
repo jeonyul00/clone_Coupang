@@ -26,7 +26,15 @@ class SplashViewController: UIViewController {
         UIView.animate(withDuration: 1,delay: 1.5) { [weak self] in
             self?.appIcon.alpha = 0
         }
-        lottieAnimationView.play()
+        lottieAnimationView.play { _ in
+            let storyboard = UIStoryboard(name: "Home", bundle: nil)
+            let viewController = storyboard.instantiateInitialViewController() // init view controller
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                if let window = windowScene.windows.first(where: { $0.isKeyWindow }) {
+                    window.rootViewController = viewController
+                }
+            }
+        }
     }
     
 }
