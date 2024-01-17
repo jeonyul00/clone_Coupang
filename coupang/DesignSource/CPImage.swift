@@ -42,6 +42,10 @@ enum CPImage {
     static var silde1:UIImage = UIImage(named: "unsplash_kcA-c3f_3FE-1")!
     static var silde2:UIImage = UIImage(named: "unsplash_kcA-c3f_3FE")!
     static var silde3:UIImage = UIImage(named: "unsplash_OyGTkXhuKZE")!
+    
+    // coupon
+    static var buttonComplete:UIImage = UIImage(named: "btn_complete")!
+    static var buttonActivate:UIImage = UIImage(named: "btn_activate")!
 }
 
 

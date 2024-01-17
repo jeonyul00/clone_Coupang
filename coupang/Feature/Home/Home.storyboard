@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="coupang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1223"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UqF-2s-P1w">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="1164"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z76-WF-I47">
                                     <size key="itemSize" width="393" height="184"/>
@@ -47,7 +47,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeProductCollectionViewCell" id="3DL-sY-bW2" customClass="HomeProductCollectionViewCell" customModule="coupang" customModuleProvider="target">
-                                        <rect key="frame" x="141.66666666666666" y="194" width="110" height="201.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="194" width="110" height="201.33333333333337"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xx7-ko-poT">
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="201.33333333333337"/>
@@ -119,6 +119,33 @@
                                             <outlet property="productTitleLabel" destination="Xxo-3B-4o3" id="q9m-fB-tp5"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCouponButtonCollectionViewCell" id="VoQ-ed-8N8" customClass="HomeCouponButtonCollectionViewCell" customModule="coupang" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="287.66666666666669" width="24" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kmv-aA-9rt">
+                                            <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z07-ea-USe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                    <connections>
+                                                        <action selector="didTapCouponButton:" destination="VoQ-ed-8N8" eventType="touchUpInside" id="RZY-2V-uBh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="z07-ea-USe" secondAttribute="bottom" id="Bgj-Qm-Xnt"/>
+                                                <constraint firstItem="z07-ea-USe" firstAttribute="top" secondItem="kmv-aA-9rt" secondAttribute="top" id="VSB-7m-uRG"/>
+                                                <constraint firstAttribute="trailing" secondItem="z07-ea-USe" secondAttribute="trailing" id="txV-OZ-8eT"/>
+                                                <constraint firstItem="z07-ea-USe" firstAttribute="leading" secondItem="kmv-aA-9rt" secondAttribute="leading" id="xL8-hO-6Ue"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="couponButton" destination="z07-ea-USe" id="3Tr-Yi-ZbK"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
@@ -131,6 +158,7 @@
                             <constraint firstItem="UqF-2s-P1w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pqx-xu-tBs"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="393" height="1223"/>
                     <connections>
                         <outlet property="collectionView" destination="UqF-2s-P1w" id="8IZ-J5-T0U"/>
                     </connections>
