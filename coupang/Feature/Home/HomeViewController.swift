@@ -30,9 +30,10 @@ class HomeViewController: UIViewController {
         
         setDataSource()
         bindViewModel()
-        viewModel.loadData()
         // 컬렉션 뷰의 레이아웃 설정
         collectionView.collectionViewLayout = compositionalLayout
+        
+        viewModel.process(action: .loadData)
     }
     
     private static func setCompositinalLayout() -> UICollectionViewCompositionalLayout {
@@ -51,15 +52,10 @@ class HomeViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        viewModel.$bannerViewModels.receive(on: DispatchQueue.main).sink {[weak self] _ in
+        viewModel.state.$collectionViewModels.receive(on: DispatchQueue.main).sink {[weak self] _ in
             self?.applySnapShot()
         }.store(in: &cancellables) // cancellables의 생명주기가 끝나면, 관찰을 끊는다.
-        viewModel.$horizontalProductViewModels.receive(on: DispatchQueue.main).sink {[weak self] _ in
-            self?.applySnapShot()
-        }.store(in: &cancellables)
-        viewModel.$verticalProductViewModels.receive(on: DispatchQueue.main).sink {[weak self] _ in
-            self?.applySnapShot()
-        }.store(in: &cancellables)
+        
         
     }
     
@@ -82,25 +78,24 @@ class HomeViewController: UIViewController {
     private func applySnapShot() {
         // Diffable Data Source 스냅샷을 생성
         var snapShot: NSDiffableDataSourceSnapshot<Section, AnyHashable> = NSDiffableDataSourceSnapshot<Section,AnyHashable>()
-        if let bannerViewModels = viewModel.bannerViewModels {
+        if let bannerViewModels = viewModel.state.collectionViewModels.bannerViewModels {
             // 스냅샷에 'banner' 섹션 추가
             snapShot.appendSections([.banner])
             // 'banner' 섹션에 이미지들을 아이템으로 추가
             snapShot.appendItems(bannerViewModels, toSection: .banner)
         }
         
-        if let verticalProductViewModels = viewModel.horizontalProductViewModels {
+        if let horizontalProductViewModels = viewModel.state.collectionViewModels.horizontalProductViewModels {
             snapShot.appendSections([.horizontalProductItem])
-            snapShot.appendItems(verticalProductViewModels,toSection: .horizontalProductItem)
+            snapShot.appendItems(horizontalProductViewModels,toSection: .horizontalProductItem)
             
         }
         
-        if let verticalProductViewModels = viewModel.verticalProductViewModels {
+        if let verticalProductViewModels = viewModel.state.collectionViewModels.verticalProductViewModels {
             snapShot.appendSections([.verticalProductItem])
             snapShot.appendItems(verticalProductViewModels,toSection: .verticalProductItem)
         }
-        
-                
+                        
         // 데이터 소스에 스냅샷을 적용하여 데이터를 업데이트
         dataSource?.apply(snapShot)
     }

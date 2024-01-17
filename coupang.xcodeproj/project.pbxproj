@@ -23,6 +23,7 @@
 		AB051DC82B564952003C5274 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DC72B564952003C5274 /* HomeViewController.swift */; };
 		AB051DCE2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DCD2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift */; };
 		AB051DD02B565F14003C5274 /* HomeProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB051DCF2B565F14003C5274 /* HomeProductCollectionViewCell.swift */; };
+		AB852D062B5769900010C33C /* Extention+Numericumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB852D052B5769900010C33C /* Extention+Numericumeric.swift */; };
 		AB9DFC902B567B0A002C6459 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DFC8F2B567B0A002C6459 /* NetworkService.swift */; };
 		AB9DFC932B567C7D002C6459 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DFC922B567C7D002C6459 /* HomeResponse.swift */; };
 		AB9DFC962B56814C002C6459 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AB9DFC952B56814C002C6459 /* Kingfisher */; };
@@ -47,6 +48,7 @@
 		AB051DC72B564952003C5274 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB051DCD2B564FF1003C5274 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB051DCF2B565F14003C5274 /* HomeProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB852D052B5769900010C33C /* Extention+Numericumeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+Numericumeric.swift"; sourceTree = "<group>"; };
 		AB9DFC8F2B567B0A002C6459 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AB9DFC922B567C7D002C6459 /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
 		AB9DFC972B5684FB002C6459 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		AB051D9E2B5619F8003C5274 /* coupang */ = {
 			isa = PBXGroup;
 			children = (
+				AB852D042B5769630010C33C /* Util */,
 				AB9DFC912B567C52002C6459 /* Model */,
 				AB051DCC2B564D66003C5274 /* Delegates */,
 				AB051DBA2B562902003C5274 /* DesignSource */,
@@ -144,6 +147,14 @@
 				AB051DA12B5619F8003C5274 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AB852D042B5769630010C33C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AB852D052B5769900010C33C /* Extention+Numericumeric.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		AB9DFC8D2B567524002C6459 /* View */ = {
@@ -258,6 +269,7 @@
 				AB051DD02B565F14003C5274 /* HomeProductCollectionViewCell.swift in Sources */,
 				AB051DA02B5619F8003C5274 /* AppDelegate.swift in Sources */,
 				AB051DC82B564952003C5274 /* HomeViewController.swift in Sources */,
+				AB852D062B5769900010C33C /* Extention+Numericumeric.swift in Sources */,
 				AB051DC42B5631B5003C5274 /* CPFont.swift in Sources */,
 				AB051DBE2B562A59003C5274 /* CPImage.swift in Sources */,
 				AB9DFC982B5684FB002C6459 /* HomeViewModel.swift in Sources */,
